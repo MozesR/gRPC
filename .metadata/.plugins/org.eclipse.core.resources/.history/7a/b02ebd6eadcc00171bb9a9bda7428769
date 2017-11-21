@@ -1,0 +1,22 @@
+package com.abn_amro.demo.grpc;
+
+
+
+import com.abn_amro.grpc.PersonRequest;
+import com.abn_amro.grpc.PersonResponse;
+import com.abn_amro.grpc.PersonServiceGrpc.PersonServiceImplBase;
+
+import io.grpc.stub.StreamObserver;
+
+public class PersonServerImpl extends PersonServiceImplBase{
+	
+	@Override
+	public void getPerson(PersonRequest request, StreamObserver<PersonResponse> responseObserver) {
+	
+			responseObserver.onNext(PersonResponse.newBuilder()
+					.setPersonInfo("" + request.getName()
+					+ " age:" + request.getAge()).build());
+		
+			responseObserver.onCompleted();
+	}
+}

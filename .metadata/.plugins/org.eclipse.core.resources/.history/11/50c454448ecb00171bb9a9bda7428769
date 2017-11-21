@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "personProto";
+package com.abn_amro.grpc;
+
+
+
+message PersonRequest {
+  string name = 1;
+  string email = 2
+  int64 age = 3;
+  repeated string sports = 4;
+  map<string,string> scores = 5;
+  
+}
+
+
+message PersonResponse {
+ string PersonInfo = 1;
+}
+
+
+service personService {
+  rpc getPerson(PersonRequest) returns (personResponse) {}
+}

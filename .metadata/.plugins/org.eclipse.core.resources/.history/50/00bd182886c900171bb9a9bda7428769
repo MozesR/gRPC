@@ -1,0 +1,17 @@
+package com.abn_amro.demo.grpc;
+
+import com.abn_amro.grpc.Request;
+import com.abn_amro.grpc.Response;
+import com.abn_amro.grpc.MessageServiceGrpc.MessageServiceImplBase;
+
+import io.grpc.stub.StreamObserver;
+
+public class MessageServerImpl extends MessageServiceImplBase {
+	
+	
+	@Override
+	public void getMessage(Request request, StreamObserver<Response> responseObserver) {
+		// TODO Auto-generated method stub
+		super.getMessage(request, responseObserver);
+	}
+}

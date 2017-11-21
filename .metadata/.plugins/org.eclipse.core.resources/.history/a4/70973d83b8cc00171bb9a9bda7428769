@@ -1,0 +1,5 @@
+package com.abnamro.demo.rest.service;
+
+public class Person {
+
+}

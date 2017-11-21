@@ -1,0 +1,17 @@
+package com.abn_amro.demo.grpc;
+
+import io.grpc.Server;
+import io.grpc.ServerBuilder;
+import io.grpc.stub.StreamObserver;
+import java.io.IOException;
+import java.util.logging.Logger;
+public class MessageServer {
+
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+
+	}
+	private static final Logger logger = Logger.getLogger(MessageServer.class.getName());
+
+	  
+}

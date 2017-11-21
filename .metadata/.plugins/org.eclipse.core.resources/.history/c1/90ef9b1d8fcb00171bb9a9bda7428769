@@ -1,0 +1,10 @@
+package com.abn_amro.demo.grpc;
+
+
+
+import io.grpc.stub.StreamObserver;
+
+public class MessageServerImpl{
+	
+	
+}

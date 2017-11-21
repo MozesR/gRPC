@@ -1,0 +1,5 @@
+package com.abn_amro.demo.grpc;
+
+public class MessageServer extends MessageServiceGrpc.{
+
+}

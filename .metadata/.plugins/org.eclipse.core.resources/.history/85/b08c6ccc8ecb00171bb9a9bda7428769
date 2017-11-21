@@ -1,0 +1,28 @@
+package com.abn_amro.demo.grpc;
+
+import com.abn_amro.grpc.Request;
+import com.abn_amro.grpc.Response;
+import com.abn_amro.grpc.MessageServiceGrpc.MessageServiceImplBase;
+
+import io.grpc.stub.StreamObserver;
+
+public class MessageServerImpl extends MessageServiceImplBase {
+	
+	String Department;
+	
+	@Override
+	public void getMessage(Request request, StreamObserver<Response> responseObserver) {
+		// TODO Auto-generated method stub
+		//super.getMessage(request, responseObserver);
+		
+		  if (request.getName().toString()=="Mozes" && request.getRole().toString()=="developer")  {
+			  Department = "Risk";
+		  }else {
+			  Department = "Unknown";
+		  }
+		
+		  Response reply = Response.newBuilder().setDepartment(Department).build();
+	      responseObserver.onNext(reply);
+	      responseObserver.onCompleted();
+	}
+}

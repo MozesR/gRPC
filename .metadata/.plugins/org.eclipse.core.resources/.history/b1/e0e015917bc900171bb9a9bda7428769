@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "zipcodeProto";
+package nl.abnamro.demo.grpc;
+
+
+service ZipcodeService {
+  rpc getZipcode(strean Request) returns (stream Response) ;
+}
+
+message Request {
+  string address = 1;
+  string city = 2;
+}
+
+
+message Response {
+  string zip_code = 1;
+}

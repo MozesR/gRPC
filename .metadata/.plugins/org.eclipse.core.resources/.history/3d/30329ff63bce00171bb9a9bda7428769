@@ -1,0 +1,13 @@
+package com.abnamro.demo.grpc.streaming;
+
+/**
+ * Hello world!
+ *
+ */
+public class StreamPersonService 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

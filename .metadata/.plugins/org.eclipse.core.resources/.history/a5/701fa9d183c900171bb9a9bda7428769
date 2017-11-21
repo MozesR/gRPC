@@ -1,0 +1,20 @@
+package com.abn_amro.demo.grpc;
+
+import com.abn_amro.grpc.MessageServiceGrpc.MessageServiceImplBase;
+
+/**
+ * Hello world!
+ *
+ */
+public class MessageServer 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+    
+    static class MessageImpl extends MessageServiceImplBase {
+
+      
+      }
+}

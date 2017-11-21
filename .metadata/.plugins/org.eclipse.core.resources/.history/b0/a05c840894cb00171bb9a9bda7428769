@@ -1,0 +1,36 @@
+package com.abnamro.demo.grpc.client;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.StatusRuntimeException;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.abn_amro.demo.grpc.PersonServer;
+
+import com.abn_amro.grpc.PersonRequest;
+import com.abn_amro.grpc.PersonResponse;
+import com.abn_amro.grpc.PersonServiceGrpc;
+
+
+public class PersonServiceClient {
+
+	private static final Logger logger = Logger.getLogger(PersonServiceClient.class.getName());
+
+
+	public static void main(String[] args) throws InterruptedException {
+		ManagedChannel channel = ManagedChannelBuilder.forAddress("192.168.99.100", 4516)
+				.usePlaintext(true)
+				.build();
+
+		PersonServiceGrpc.PersonServiceBlockingStub stub = PersonServiceGrpc.newBlockingStub(channel);
+	
+				PersonResponse response = stub.getPerson(
+						PersonRequest.newBuilder()
+						.setName("Mozes")
+						.setAge(25).build());
+		
+		System.out.println(response);
+	}
+
+}

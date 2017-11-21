@@ -1,0 +1,7 @@
+package com.abn_amro.demo.server;
+
+
+
+public class MessageImpl extends com.abn_amro.demo.grpc. {
+
+}

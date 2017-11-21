@@ -1,0 +1,9 @@
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/StreamPersonRequest.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/StreamingProto.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/StreamPersonRequestOrBuilder.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/StreamPersonResponse.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/grpc-java/com/abn_amro/grpc/stream/StreamPersonServiceGrpc.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/Role.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/src/main/java/com/abnamro/demo/grpc/streaming/StreamPersonServiceImpl.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/src/main/java/com/abnamro/demo/grpc/streaming/StreamPersonService.java
+/Users/mozesrahangmetan/Documents/workspace-abnamro-grpc/streaming/target/generated-sources/protobuf/java/com/abn_amro/grpc/stream/StreamPersonResponseOrBuilder.java
